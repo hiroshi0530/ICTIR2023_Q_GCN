@@ -1,0 +1,42 @@
+seed: 123
+random_state: 123
+log_level: DEBUG # DEBUG, INFO, WARNING, ERROR
+
+train_val_test: [0.8,0.1,0.1]
+
+checkpoint_dir_name: "./checkpoint/"
+
+user_id_name: "user_id"
+item_id_name: "item_id"
+user_idx_name: "user_idx"
+item_idx_name: "item_idx"
+neg_item_idx_name: "neg_item_idx"
+
+# default dataset config
+dataset: "ml-100k"
+usecols: ["user_id", "item_id"]
+
+# default model
+model: "QGCN"
+
+# training parameter
+train_batch_size: 512
+data_split: "no_sort"
+epochs: 300
+early_stop_num: 10
+
+# eval
+eval_batch_size: 10 # user unit
+topk: 10
+
+# model config
+embedding_size: 64
+n_layers: 2
+learning_rate: 0.001
+reg_weight: 0.00001
+
+# layer info
+n_layers: 1
+alpha_list: [0.1,0.8]
+
+

@@ -1,0 +1,7 @@
+/.vscode/
+/result/
+/log/
+/data/
+/checkpoint/
+/data_temp/
+*.pkl
